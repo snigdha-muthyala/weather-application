@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snigdha's Weather Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" href="raining.png">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Weather Application</h1>
+        <div class="weather-input">
+            <form>
+                <input type="text" name="city" placeholder="Enter City Name" id="input-city">
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+        </div>
+
+        <div class="place">
+            <div class="location">
+                <i class="bi bi-geo-alt-fill" style="font-size: 22px "></i>
+                <h4 style="display:inline;">Place</h4>
+                <h2 id="placename">Delhi, India</h2>
+                <Date class="date">02 August 2004</Date>
+            </div>
+            <div class="description">
+                <img src="weather.png" width="90px">
+                <h2 id="description">Cloudy</h2>
+            </div>
+        </div>
+
+        <div class="weather-body">
+            <div class="card humidity">
+                <i class="bi bi-droplet" style="font-size: 22px
+                ;"></i>
+                <h2>Humidity</h2>
+                <h4 id="humid">40%</h4>
+            </div>
+            <div class="card temperature">
+                <i class="bi bi-thermometer-sun" style="font-size: 22px;"></i>
+                <h2>temperature</h2>
+                <h4 id="temp" >35 C</h4>
+            </div>
+            <div class="card wind">
+                <i class="bi bi-wind" style="font-size: 22px;"></i>
+                <h2>Wind</h2>
+                <h4 id="wind">5 km/h</h4>
+            </div>
+        </div>
+    </div>
+    <footer style="display: flex; justify-content: center;font-size: 12px;margin-top: 30px;">
+        <p>Created by SNIGDHA | &copy; 2023</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
